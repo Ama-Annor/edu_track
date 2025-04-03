@@ -1,7 +1,7 @@
 import 'dart:convert';
 
-import 'package:study_master/model/schedule_model.dart';
-import 'package:study_master/services/api_service.dart';
+import 'package:edu_track/model/schedule_model.dart';
+import 'package:edu_track/services/api_service.dart';
 
 class ScheduleController {
   final ApiService _apiService = ApiService();

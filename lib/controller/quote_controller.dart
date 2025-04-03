@@ -1,6 +1,6 @@
 import 'dart:convert';
 import 'package:http/http.dart' as http;
-import 'package:study_master/model/quote.dart';
+import 'package:edu_track/model/quote.dart';
 
 class QuoteController{
 

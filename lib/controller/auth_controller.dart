@@ -1,4 +1,4 @@
-import 'package:study_master/services/auth.dart';
+import 'package:edu_track/services/auth.dart';
 
 class AuthController {
   final AuthService _authService = AuthService();

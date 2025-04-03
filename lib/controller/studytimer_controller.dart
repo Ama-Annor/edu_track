@@ -1,7 +1,7 @@
 import 'dart:async';
 import 'dart:convert';
-import 'package:study_master/model/studytimer_model.dart';
-import 'package:study_master/services/api_service.dart';
+import 'package:edu_track/model/studytimer_model.dart';
+import 'package:edu_track/services/api_service.dart';
 
 class StudytimerController {
   final ApiService _apiService = ApiService();

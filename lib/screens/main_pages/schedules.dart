@@ -2,11 +2,11 @@ import 'dart:convert';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
-import 'package:study_master/controller/deadline_controller.dart';
-import 'package:study_master/model/deadline_model.dart';
-import 'package:study_master/screens/sub-pages/settings.dart';
-import 'package:study_master/screens/widgets/deadline_card.dart';
-import 'package:study_master/screens/widgets/stats_card.dart';
+import 'package:edu_track/controller/deadline_controller.dart';
+import 'package:edu_track/model/deadline_model.dart';
+import 'package:edu_track/screens/sub-pages/settings.dart';
+import 'package:edu_track/screens/widgets/deadline_card.dart';
+import 'package:edu_track/screens/widgets/stats_card.dart';
 import 'package:http/http.dart' as http;
 
 class DashboardPage extends StatefulWidget {

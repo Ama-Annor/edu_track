@@ -1,7 +1,7 @@
 import 'dart:convert';
 
-import 'package:study_master/model/deadline_model.dart';
-import 'package:study_master/services/api_service.dart';
+import 'package:edu_track/model/deadline_model.dart';
+import 'package:edu_track/services/api_service.dart';
 
 class DeadlineController {
   final ApiService _apiService = ApiService();

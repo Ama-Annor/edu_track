@@ -2,8 +2,8 @@ import 'dart:async';
 import 'dart:convert';
 
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:study_master/model/studyhour_model.dart';
-import 'package:study_master/services/api_service.dart';
+import 'package:edu_track/model/studyhour_model.dart';
+import 'package:edu_track/services/api_service.dart';
 
 class StudyhourController {
   final ApiService _apiService = ApiService();

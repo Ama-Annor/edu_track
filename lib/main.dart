@@ -127,8 +127,8 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:flutter/material.dart';
-import 'package:study_master/screens/sub-pages/splash_screen.dart';
-//import 'package:study_master/screens/widgets/bottom_nav_bar.dart';
+import 'package:edu_track/screens/sub-pages/splash_screen.dart';
+//import 'package:edu_track/screens/widgets/bottom_nav_bar.dart';
 
 void main() async{
     WidgetsFlutterBinding.ensureInitialized();
