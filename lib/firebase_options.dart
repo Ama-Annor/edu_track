@@ -52,11 +52,12 @@ class DefaultFirebaseOptions {
     }
   }
 
+  
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyB-NHkM8E15VnnoED5B2m4kwoNjJm4kIk8',
-    appId: '1:1024668757717:android:67980ef6554e7336f3fc5c',
-    messagingSenderId: '1024668757717',
-    projectId: 'studymaster-34e00',
-    storageBucket: 'studymaster-34e00.appspot.com',
+    apiKey: 'AIzaSyB-NHkM8E15VnnoED5B2m4kwoNjJm4kIk8', // This might be the same or different in your new project
+    appId: '1:688118703124:android:10d510d6d21d6fb7463301',
+    messagingSenderId: '688118703124',
+    projectId: 'edutrack-2e971',
+    storageBucket: 'edutrack-2e971.appspot.com',
   );
 }

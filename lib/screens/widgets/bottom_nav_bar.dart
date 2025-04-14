@@ -1,15 +1,13 @@
 import 'package:flutter/material.dart';
-import 'package:edu_track/screens/main-pages/dashboard.dart';
-import 'package:edu_track/screens/main-pages/deadlines.dart';
-import 'package:edu_track/screens/main-pages/notes.dart';
-import 'package:edu_track/screens/main-pages/schedules.dart';
-import 'package:edu_track/screens/main-pages/timer.dart';
+import 'package:edu_track/screens/main_pages/dashboard.dart' as Dashboard;
+import 'package:edu_track/screens/main_pages/deadlines.dart';
+import 'package:edu_track/screens/main_pages/notes.dart';
+import 'package:edu_track/screens/main_pages/schedules.dart' as Schedules;
+import 'package:edu_track/screens/main_pages/timer.dart';
 
 class CustomBottomNav extends StatefulWidget {
   final String email;
-
   const CustomBottomNav({super.key, required this.email});
-
   @override
   State<CustomBottomNav> createState() => _CustomBottomNavState();
 }
@@ -17,7 +15,6 @@ class CustomBottomNav extends StatefulWidget {
 class _CustomBottomNavState extends State<CustomBottomNav> {
   int _selectedIndex = 0;
   late List<Widget> pages;
-
   final List<IconData> _icons = const [
     Icons.home,
     Icons.list,
@@ -25,21 +22,21 @@ class _CustomBottomNavState extends State<CustomBottomNav> {
     Icons.menu_book,
     Icons.timer,
   ];
-
+  
   @override
   void initState() {
     super.initState();
     pages = [
-      DashboardPage(
+      Dashboard.DashboardPage(
         email: widget.email,
       ),
-      Schedules(email: widget.email,),
+      Schedules.Schedules(email: widget.email), // Changed from SchedulesPage to Schedules
       DeadlinePage(email: widget.email),
       const NotesPage(),
       const TimerPage()
     ];
   }
-
+    
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -50,49 +47,49 @@ class _CustomBottomNavState extends State<CustomBottomNav> {
             children: pages,
           ),
           Positioned(
-              bottom: 20,
-              left: 20,
-              right: 20,
-              child: Container(
-                height: 75,
-                margin: const EdgeInsets.all(10),
-                decoration: BoxDecoration(
-                  color: const Color.fromRGBO(255, 63, 23, 1),
-                  borderRadius: BorderRadius.circular(30),
-                ),
-                child: Row(
-                    crossAxisAlignment: CrossAxisAlignment.center,
-                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                    children: _icons.map((icon) {
-                      int index = _icons.indexOf(icon);
-                      bool isSelected = index == _selectedIndex;
-                      return Material(
-                          color: Colors.transparent,
-                          child: GestureDetector(
-                            onTap: () {
-                              setState(() {
-                                _selectedIndex = index;
-                              });
-                            },
-                            child: Column(
-                              mainAxisAlignment: MainAxisAlignment.center,
-                              children: [
-                                Container(
-                                  alignment: Alignment.center,
-                                  margin: const EdgeInsets.all(10),
-                                  child: Icon(
-                                    icon,
-                                    color: isSelected
-                                        ? Colors.white
-                                        : Colors.white70,
-                                    size: isSelected ? 55 : 32,
-                                  ),
-                                ),
-                              ],
+            bottom: 20,
+            left: 20,
+            right: 20,
+            child: Container(
+              height: 75,
+              margin: const EdgeInsets.all(10),
+              decoration: BoxDecoration(
+                color: const Color.fromRGBO(255, 63, 23, 1),
+                borderRadius: BorderRadius.circular(30),
+              ),
+              child: Row(
+                crossAxisAlignment: CrossAxisAlignment.center,
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: _icons.map((icon) {
+                  int index = _icons.indexOf(icon);
+                  bool isSelected = index == _selectedIndex;
+                  return Material(
+                    color: Colors.transparent,
+                    child: GestureDetector(
+                      onTap: () {
+                        setState(() {
+                          _selectedIndex = index;
+                        });
+                      },
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Container(
+                            alignment: Alignment.center,
+                            margin: const EdgeInsets.all(10),
+                            child: Icon(
+                              icon,
+                              color: isSelected
+                                ? Colors.white
+                                : Colors.white70,
+                              size: isSelected ? 55 : 32,
                             ),
-                          ));
-                    }).toList()),
-              ))
+                          ),
+                        ],
+                      ),
+                    ));
+                }).toList()),
+            ))
         ],
       ),
     );

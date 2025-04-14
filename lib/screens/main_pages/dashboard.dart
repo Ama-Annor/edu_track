@@ -27,23 +27,23 @@ class _DashboardPageState extends State<DashboardPage> {
     super.initState();
     _deadlines = _fetchData();
     _advice = fetchAdvice();
-    triggerNotification();
+    //triggerNotification();
   }
 
   Future<List<Deadline>> _fetchData() async {
     return await _deadlineController.getAllDeadlines(widget.email);
   }
 
-  Future<void> triggerNotification() async {
-    const url = 'https://us-central1-studymaster-34e00.cloudfunctions.net/send_motivational_quote';
-    final response = await http.post(Uri.parse(url));
+  // Future<void> triggerNotification() async {
+  //   const url = 'https://us-central1-studymaster-34e00.cloudfunctions.net/send_motivational_quote';
+  //   final response = await http.post(Uri.parse(url));
 
-    if (response.statusCode == 200) {
-      print('Notification sent successfully!');
-    } else {
-      print('Failed to send notification.');
-    }
-  }
+  //   if (response.statusCode == 200) {
+  //     print('Notification sent successfully!');
+  //   } else {
+  //     print('Failed to send notification.');
+  //   }
+  // }
 
   Future<String> fetchAdvice() async {
     final response = await http.get(Uri.parse('https://api.adviceslip.com/advice'));
