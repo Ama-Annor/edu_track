@@ -92,7 +92,7 @@ class _EditDeadlineState extends State<EditDeadline> {
       const SnackBar(
         content: Text('Subject and/or description cannot be empty',
             style: TextStyle(color: Colors.white)),
-        backgroundColor: Color.fromRGBO(255, 63, 23, 1),
+        backgroundColor: Color(0xFF00BFA5),
         behavior: SnackBarBehavior.floating,
       ),
     );
@@ -105,7 +105,7 @@ class _EditDeadlineState extends State<EditDeadline> {
       const SnackBar(
         content: Text('Subject cannot be more than 3 words',
             style: TextStyle(color: Colors.white)),
-        backgroundColor: Color.fromRGBO(255, 63, 23, 1),
+        backgroundColor: Color(0xFF00BFA5),
         behavior: SnackBarBehavior.floating,
       ),
     );
@@ -128,7 +128,7 @@ class _EditDeadlineState extends State<EditDeadline> {
       ScaffoldMessenger.of(widget.rootContext).showSnackBar(
         const SnackBar(
           content: Text('Deadline edited successfully', style: TextStyle(color: Colors.white)),
-          backgroundColor: Color.fromRGBO(255, 63, 23, 1),
+          backgroundColor: Color(0xFF00BFA5),
           behavior: SnackBarBehavior.floating,
           margin: EdgeInsets.only(top: 10.0, left: 10.0, right: 10.0),
         ),
@@ -138,7 +138,7 @@ class _EditDeadlineState extends State<EditDeadline> {
       ScaffoldMessenger.of(widget.rootContext).showSnackBar(
         const SnackBar(
           content: Text('Failed to edit deadline', style: TextStyle(color: Colors.white)),
-          backgroundColor: Color.fromRGBO(255, 63, 23, 1),
+          backgroundColor: Color(0xFF00BFA5),
           behavior: SnackBarBehavior.floating,
           margin: EdgeInsets.only(top: 10.0, left: 10.0, right: 10.0),
         ),
@@ -165,7 +165,7 @@ class _EditDeadlineState extends State<EditDeadline> {
                   style: TextStyle(
                     fontSize: 24,
                     fontWeight: FontWeight.bold,
-                    color: Color.fromRGBO(255, 63, 23, 1),
+                    color: Color(0xFF00BFA5),
                   ),
                 ),
               ),

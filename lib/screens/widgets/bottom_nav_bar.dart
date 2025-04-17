@@ -54,7 +54,7 @@ class _CustomBottomNavState extends State<CustomBottomNav> {
               height: 75,
               margin: const EdgeInsets.all(10),
               decoration: BoxDecoration(
-                color: const Color.fromRGBO(255, 63, 23, 1),
+                color: const Color(0xFF00BFA5),
                 borderRadius: BorderRadius.circular(30),
               ),
               child: Row(

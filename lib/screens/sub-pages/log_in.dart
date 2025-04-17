@@ -98,7 +98,7 @@ class _LoginPageState extends State<LoginPage> {
               'No user found.',
               style: TextStyle(color: Colors.white),
             ),
-            backgroundColor: Color.fromRGBO(255, 63, 23, 1),
+            backgroundColor: Color(0xFF00BFA5),
             duration: Duration(seconds: 2),
           ),
         );
@@ -110,7 +110,7 @@ class _LoginPageState extends State<LoginPage> {
               'Wrong password provided for that user.',
               style: TextStyle(color: Colors.white),
             ),
-            backgroundColor: Color.fromRGBO(255, 63, 23, 1),
+            backgroundColor: Color(0xFF00BFA5),
             duration: Duration(seconds: 2),
           ),
         );
@@ -121,7 +121,7 @@ class _LoginPageState extends State<LoginPage> {
               'An error occurred',
               style: TextStyle(color: Colors.white),
             ),
-            backgroundColor: Color.fromRGBO(255, 63, 23, 1),
+            backgroundColor: Color(0xFF00BFA5),
             duration: Duration(seconds: 2),
           ),
         );
@@ -226,7 +226,7 @@ class _LoginPageState extends State<LoginPage> {
                     child: const Text(
                       'Sign Up',
                       style: TextStyle(
-                        color: Color.fromRGBO(255, 63, 23, 1),
+                        color: Color(0xFF00BFA5),
                         fontSize: 16,
                         fontWeight: FontWeight.bold,
                       ),

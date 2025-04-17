@@ -56,7 +56,7 @@ class _ViewStudyHourLogsState extends State<ViewStudyHourLogs> {
                   },
                   child: const Text(
                     'Cancel',
-                    style: TextStyle(color: Color.fromRGBO(255, 63, 23, 1)),
+                    style: TextStyle(color: Color(0xFF00BFA5)),
                   ),
                 ),
                 TextButton(
@@ -65,7 +65,7 @@ class _ViewStudyHourLogsState extends State<ViewStudyHourLogs> {
                   },
                   child: const Text(
                     'Delete',
-                    style: TextStyle(color: Color.fromRGBO(255, 63, 23, 1)),
+                    style: TextStyle(color: Color(0xFF00BFA5)),
                   ),
                 ),
               ],
@@ -87,7 +87,7 @@ class _ViewStudyHourLogsState extends State<ViewStudyHourLogs> {
               'Successfully deleted study hour',
               style: TextStyle(color: Colors.white),
             ),
-            backgroundColor: Color.fromRGBO(255, 63, 23, 1),
+            backgroundColor: Color(0xFF00BFA5),
             behavior: SnackBarBehavior.floating,
           ),
         );
@@ -96,7 +96,7 @@ class _ViewStudyHourLogsState extends State<ViewStudyHourLogs> {
           SnackBar(
             content: Text('Failed to delete study hour: $e',
                 style: const TextStyle(color: Colors.white)),
-            backgroundColor: const Color.fromRGBO(255, 63, 23, 1),
+            backgroundColor: const Color(0xFF00BFA5),
             behavior: SnackBarBehavior.floating,
           ),
         );

@@ -37,7 +37,7 @@ class SchedulesCard extends StatelessWidget {
             child: Text(
               formattedDate,
               style: const TextStyle(
-                color: Color.fromRGBO(255, 63, 23, 1), // Color for time
+                color: Color(0xFF00BFA5), // Color for time
                 fontSize: 16.0,
               ),
             ),

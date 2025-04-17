@@ -51,13 +51,13 @@ void _createTimer(BuildContext context) async {
         ),
         actions: [
           TextButton(
-            child: const Text('Cancel', style: TextStyle(color: Color.fromRGBO(255, 63, 23, 1))),
+            child: const Text('Cancel', style: TextStyle(color: Color(0xFF00BFA5))),
             onPressed: () {
               Navigator.of(context).pop();
             },
           ),
           TextButton(
-            child: const Text('OK', style: TextStyle(color: Color.fromRGBO(255, 63, 23, 1))),
+            child: const Text('OK', style: TextStyle(color: Color(0xFF00BFA5))),
             onPressed: () {
               Navigator.of(context).pop(subjectController.text);
             },
@@ -75,7 +75,7 @@ void _createTimer(BuildContext context) async {
         const SnackBar(
           content: Text('Course cannot be more than 3 words',
               style: TextStyle(color: Colors.white)),
-          backgroundColor: Color.fromRGBO(255, 63, 23, 1),
+          backgroundColor: Color(0xFF00BFA5),
         ),
       );
       return;
@@ -95,7 +95,7 @@ void _createTimer(BuildContext context) async {
         const SnackBar(
           content: Text('Study time saved successfully',
               style: TextStyle(color: Colors.white)),
-          backgroundColor: Color.fromRGBO(255, 63, 23, 1),
+          backgroundColor: Color(0xFF00BFA5),
         ),
       );
     } catch (e) {
@@ -103,7 +103,7 @@ void _createTimer(BuildContext context) async {
         const SnackBar(
           content: Text('Failed to create study time',
               style: TextStyle(color: Colors.white)),
-          backgroundColor: Color.fromRGBO(255, 63, 23, 1),
+          backgroundColor: Color(0xFF00BFA5),
         ),
       );
     }
@@ -112,7 +112,7 @@ void _createTimer(BuildContext context) async {
       const SnackBar(
         content: Text('Course field cannot be empty',
             style: TextStyle(color: Colors.white)),
-        backgroundColor: Color.fromRGBO(255, 63, 23, 1),
+        backgroundColor: Color(0xFF00BFA5),
       ),
     );
   }
@@ -153,7 +153,7 @@ void _createTimer(BuildContext context) async {
       setState(() {
         _isRunning = false;
         _playIconColor = Colors.white; // Reset play icon color
-        _pauseIconColor = const Color.fromRGBO(255, 63, 23, 1);
+        _pauseIconColor = const Color(0xFF00BFA5);
       });
     }
   }
@@ -165,7 +165,7 @@ void _createTimer(BuildContext context) async {
       _isRunning = false;
       _playIconColor = Colors.white; // Reset play icon color
       _pauseIconColor = Colors.white; // Reset pause icon color
-      _resetIconColor = const Color.fromRGBO(255, 63, 23, 1);
+      _resetIconColor = const Color(0xFF00BFA5);
     });
   }
 
@@ -221,7 +221,7 @@ void _createTimer(BuildContext context) async {
             Slider(
               value: _sliderValue,
               inactiveColor: Colors.grey,
-              activeColor: const Color.fromRGBO(255, 63, 23, 1),
+              activeColor: const Color(0xFF00BFA5),
               min: 0,
               max: 120,
               divisions: 120,
@@ -239,7 +239,7 @@ void _createTimer(BuildContext context) async {
                 onPressed: _setTimer,
                 style: ButtonStyle(
                   backgroundColor:
-                      WidgetStateProperty.all(const Color.fromRGBO(255, 63, 23, 1)),
+                      WidgetStateProperty.all(const Color(0xFF00BFA5)),
                   padding: WidgetStateProperty.all(
                       const EdgeInsets.symmetric(vertical: 15)),
                   shape: WidgetStateProperty.all(const RoundedRectangleBorder(
@@ -268,7 +268,7 @@ void _createTimer(BuildContext context) async {
                     Text(
                       _formattedTime,
                       style: const TextStyle(
-                          color: Color.fromRGBO(255, 63, 23, 1), fontSize: 48),
+                          color: Color(0xFF00BFA5), fontSize: 48),
                     ),
                     const SizedBox(height: 20),
                     Row(

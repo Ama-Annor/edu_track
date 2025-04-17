@@ -63,7 +63,7 @@ class EmailVerPage extends StatelessWidget {
                   child: const Text(
                     'Resend email',
                     style: TextStyle(
-                      color: Color.fromRGBO(255, 63, 23, 1),
+                      color: Color(0xFF00BFA5),
                       fontSize: 16,
                       fontWeight: FontWeight.bold,
                     ),

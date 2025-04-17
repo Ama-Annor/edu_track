@@ -96,13 +96,13 @@ class TaskDetailModal extends StatelessWidget {
                             onPressed: () => Navigator.pop(context, false),
                             child: const Text('Cancel',
                                 style: TextStyle(
-                                    color: Color.fromRGBO(255, 63, 23, 1))),
+                                    color: Color(0xFF00BFA5))),
                           ),
                           TextButton(
                             onPressed: () => Navigator.pop(context, true),
                             child: const Text('Delete',
                                 style: TextStyle(
-                                    color: Color.fromRGBO(255, 63, 23, 1))),
+                                    color: Color(0xFF00BFA5))),
                           ),
                         ],
                       );
@@ -121,7 +121,7 @@ class TaskDetailModal extends StatelessWidget {
                             'Schedule deleted successfully',
                             style: TextStyle(color: Colors.white),
                           ),
-                          backgroundColor: Color.fromRGBO(255, 63, 23, 1),
+                          backgroundColor: Color(0xFF00BFA5),
                         ),
                       );
                     } catch (e) {
@@ -131,7 +131,7 @@ class TaskDetailModal extends StatelessWidget {
                             'Failed to delete schedule: $e',
                             style: const TextStyle(color: Colors.white),
                           ),
-                          backgroundColor: const Color.fromRGBO(255, 63, 23, 1),
+                          backgroundColor: const Color(0xFF00BFA5),
                         ),
                       );
                     }
@@ -153,7 +153,7 @@ class TaskDetailModal extends StatelessWidget {
             children: [
               const Text(
                 'From',
-                style: TextStyle(color: Color.fromRGBO(255, 63, 23, 1)),
+                style: TextStyle(color: Color(0xFF00BFA5)),
               ),
               const SizedBox(width: 8),
               Text(
@@ -163,7 +163,7 @@ class TaskDetailModal extends StatelessWidget {
               const SizedBox(width: 6),
               const Text(
                 'To',
-                style: TextStyle(color: Color.fromRGBO(255, 63, 23, 1)),
+                style: TextStyle(color: Color(0xFF00BFA5)),
               ),
               const SizedBox(width: 6),
               Text(

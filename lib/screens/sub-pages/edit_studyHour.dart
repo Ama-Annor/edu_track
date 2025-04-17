@@ -93,7 +93,7 @@ void _EditStudyhour(BuildContext context) async {
       const SnackBar(
         content: Text('Course field cannot be empty',
             style: TextStyle(color: Colors.white)),
-        backgroundColor: Color.fromRGBO(255, 63, 23, 1),
+        backgroundColor: Color(0xFF00BFA5),
         behavior: SnackBarBehavior.floating,
         margin: EdgeInsets.only(top: 10.0, left: 10.0, right: 10.0),
       ),
@@ -108,7 +108,7 @@ void _EditStudyhour(BuildContext context) async {
       const SnackBar(
         content: Text('Course cannot be more than 3 words',
             style: TextStyle(color: Colors.white)),
-        backgroundColor: Color.fromRGBO(255, 63, 23, 1),
+        backgroundColor: Color(0xFF00BFA5),
         behavior: SnackBarBehavior.floating,
         margin: EdgeInsets.only(top: 10.0, left: 10.0, right: 10.0),
       ),
@@ -132,7 +132,7 @@ void _EditStudyhour(BuildContext context) async {
         const SnackBar(
           content: Text('Study hours updated successfully',
               style: TextStyle(color: Colors.white)),
-          backgroundColor: Color.fromRGBO(255, 63, 23, 1),
+          backgroundColor: Color(0xFF00BFA5),
         ),
       );
       Navigator.of(context).pop();
@@ -141,7 +141,7 @@ void _EditStudyhour(BuildContext context) async {
         const SnackBar(
           content: Text('Failed to update study hours',
               style: TextStyle(color: Colors.white)),
-          backgroundColor: Color.fromRGBO(255, 63, 23, 1),
+          backgroundColor: Color(0xFF00BFA5),
         ),
       );
     }
@@ -150,7 +150,7 @@ void _EditStudyhour(BuildContext context) async {
       const SnackBar(
         content: Text('Failed to update study hours',
             style: TextStyle(color: Colors.white)),
-        backgroundColor: Color.fromRGBO(255, 63, 23, 1),
+        backgroundColor: Color(0xFF00BFA5),
       ),
     );
   }
@@ -175,7 +175,7 @@ void _EditStudyhour(BuildContext context) async {
             style: TextStyle(
                 fontSize: 24,
                 fontWeight: FontWeight.bold,
-                color: Color.fromRGBO(255, 63, 23, 1)),
+                color: Color(0xFF00BFA5)),
           ),),
           const SizedBox(height: 50,),
           CustomTextField(

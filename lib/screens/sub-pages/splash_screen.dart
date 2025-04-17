@@ -28,7 +28,7 @@ class _SplashScreenState extends State<SplashScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color.fromRGBO(29, 29, 29, 1),
+      backgroundColor: const Color(0xFF1F2933),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
@@ -36,11 +36,11 @@ class _SplashScreenState extends State<SplashScreen> {
             AnimatedTextKit(
               animatedTexts: [
                 TypewriterAnimatedText(
-                  'StudyMaster',
+                  'Edu Track',
                   textStyle: const TextStyle(
                     fontSize: 40,
                     fontWeight: FontWeight.bold,
-                    color: Color.fromRGBO(255, 63, 23, 1),
+                    color: Color(0xFF00BFA5),
                   ),
                   speed: const Duration(milliseconds: 400),
                 ),
@@ -60,7 +60,7 @@ class _SplashScreenState extends State<SplashScreen> {
               AnimatedTextKit(
                 animatedTexts: [
                   FadeAnimatedText(
-                    'Master your studies, Master your life',
+                    'Your education, on track',
                     textStyle: const TextStyle(
                       fontSize: 17,
                       color: Colors.white,

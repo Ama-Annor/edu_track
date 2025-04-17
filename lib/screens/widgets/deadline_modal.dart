@@ -35,7 +35,7 @@ class DeadlineModal extends StatelessWidget {
               Text(
             formattedDate,
             style: const TextStyle(
-              color: Color.fromRGBO(255, 63, 23, 1),
+              color: Color(0xFF00BFA5),
               fontSize: 14,
             ),
           ),
@@ -81,13 +81,13 @@ class DeadlineModal extends StatelessWidget {
                             onPressed: () => Navigator.pop(context, false),
                             child: const Text('Cancel',
                                 style: TextStyle(
-                                    color: Color.fromRGBO(255, 63, 23, 1))),
+                                    color: Color(0xFF00BFA5))),
                           ),
                           TextButton(
                             onPressed: () => Navigator.pop(context, true),
                             child: const Text('Delete',
                                 style: TextStyle(
-                                    color: Color.fromRGBO(255, 63, 23, 1))),
+                                    color: Color(0xFF00BFA5))),
                           ),
                         ],
                       );
@@ -106,7 +106,7 @@ class DeadlineModal extends StatelessWidget {
                             'Deadline deleted successfully',
                             style: TextStyle(color: Colors.white),
                           ),
-                          backgroundColor: Color.fromRGBO(255, 63, 23, 1),
+                          backgroundColor: Color(0xFF00BFA5),
                         ),
                       );
                     } catch (e) {
@@ -116,7 +116,7 @@ class DeadlineModal extends StatelessWidget {
                             'Failed to delete deadline: $e',
                             style: const TextStyle(color: Colors.white),
                           ),
-                          backgroundColor: const Color.fromRGBO(255, 63, 23, 1),
+                          backgroundColor: const Color(0xFF00BFA5),
                         ),
                       );
                     }

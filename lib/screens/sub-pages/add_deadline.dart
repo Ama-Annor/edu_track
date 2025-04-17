@@ -78,7 +78,7 @@ void _CreateDeadline(BuildContext context) async {
       const SnackBar(
         content: Text('Subject and/or description cannot be empty',
             style: TextStyle(color: Colors.white)),
-        backgroundColor: Color.fromRGBO(255, 63, 23, 1),
+        backgroundColor: Color(0xFF00BFA5),
         behavior: SnackBarBehavior.floating,
       ),
     );
@@ -91,7 +91,7 @@ void _CreateDeadline(BuildContext context) async {
       const SnackBar(
         content: Text('Subject cannot be more than 3 words',
             style: TextStyle(color: Colors.white)),
-        backgroundColor: Color.fromRGBO(255, 63, 23, 1),
+        backgroundColor: Color(0xFF00BFA5),
         behavior: SnackBarBehavior.floating,
       ),
     );
@@ -115,7 +115,7 @@ void _CreateDeadline(BuildContext context) async {
       const SnackBar(
         content: Text('Deadline created successfully',
             style: TextStyle(color: Colors.white)),
-        backgroundColor: Color.fromRGBO(255, 63, 23, 1),
+        backgroundColor: Color(0xFF00BFA5),
         behavior: SnackBarBehavior.floating,
       ),
     );
@@ -125,7 +125,7 @@ void _CreateDeadline(BuildContext context) async {
       const SnackBar(
         content: Text('Failed to create deadline',
             style: TextStyle(color: Colors.white)),
-        backgroundColor: Color.fromRGBO(255, 63, 23, 1),
+        backgroundColor: Color(0xFF00BFA5),
         behavior: SnackBarBehavior.floating,
       ),
     );
@@ -150,7 +150,7 @@ Widget build(BuildContext context) {
               style: TextStyle(
                   fontSize: 24,
                   fontWeight: FontWeight.bold,
-                  color: Color.fromRGBO(255, 63, 23, 1)),
+                  color: Color(0xFF00BFA5)),
             ),
           ),
           const SizedBox(height: 50),

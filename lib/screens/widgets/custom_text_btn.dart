@@ -41,7 +41,7 @@ class CustomTextButton extends StatelessWidget {
           Container(
             padding: const EdgeInsets.all(8),
             decoration: const BoxDecoration(
-                color: Color.fromRGBO(255, 63, 23, 1), shape: BoxShape.circle),
+                color: Color(0xFF00BFA5), shape: BoxShape.circle),
             child: Icon(icon, color: Colors.white, size: 25,),
           )
         ],

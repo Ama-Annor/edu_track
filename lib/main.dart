@@ -124,33 +124,81 @@
 //   }
 // }
 
+// import 'package:firebase_core/firebase_core.dart';
+// import 'package:firebase_messaging/firebase_messaging.dart';
+// import 'package:flutter/material.dart';
+// import 'package:edu_track/screens/sub-pages/splash_screen.dart';
+// //import 'package:edu_track/screens/widgets/bottom_nav_bar.dart';
+// import 'firebase_options.dart'; 
+
+
+// void main() async{
+//     WidgetsFlutterBinding.ensureInitialized();
+//     await Firebase.initializeApp();
+//     FirebaseMessaging.onBackgroundMessage(_firebaseMessagingBackgroundHandler);
+//   runApp(const MyApp());
+// }
+
+// Future<void> _firebaseMessagingBackgroundHandler(RemoteMessage message) async {
+//   await Firebase.initializeApp();
+//   print("Handling a background message: ${message.messageId}");
+// }
+
+// class MyApp extends StatelessWidget {
+//   const MyApp({super.key});
+
+//   // This widget is the root of your application.
+//   @override
+//   Widget build(BuildContext context) {
+//     return const MaterialApp(
+//       debugShowCheckedModeBanner: false,
+//       //home: Scaffold(body: EnableNotifications(isMotivationalQuote: true, isStudyTips: false,),),
+//       home: SplashScreen(),
+//     );
+//   }
+// }
+
+
 import 'package:firebase_core/firebase_core.dart';
 import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:flutter/material.dart';
 import 'package:edu_track/screens/sub-pages/splash_screen.dart';
-//import 'package:edu_track/screens/widgets/bottom_nav_bar.dart';
+import 'firebase_options.dart'; // Add this import
 
-void main() async{
+void main() async {
     WidgetsFlutterBinding.ensureInitialized();
-    await Firebase.initializeApp();
-    FirebaseMessaging.onBackgroundMessage(_firebaseMessagingBackgroundHandler);
-  runApp(const MyApp());
+    
+    try {
+      await Firebase.initializeApp(
+        options: DefaultFirebaseOptions.currentPlatform, // Add this line
+      );
+      FirebaseMessaging.onBackgroundMessage(_firebaseMessagingBackgroundHandler);
+    } catch (e) {
+      print("Error initializing Firebase: $e");
+      // Continue without Firebase for now
+    }
+    
+    runApp(const MyApp());
 }
 
 Future<void> _firebaseMessagingBackgroundHandler(RemoteMessage message) async {
-  await Firebase.initializeApp();
-  print("Handling a background message: ${message.messageId}");
+  try {
+    await Firebase.initializeApp(
+      options: DefaultFirebaseOptions.currentPlatform, // Add this here too
+    );
+    print("Handling a background message: ${message.messageId}");
+  } catch (e) {
+    print("Error in background handler: $e");
+  }
 }
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
-      //home: Scaffold(body: EnableNotifications(isMotivationalQuote: true, isStudyTips: false,),),
       home: SplashScreen(),
     );
   }

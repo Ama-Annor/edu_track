@@ -183,7 +183,7 @@ class _SignUpPageState extends State<SignUpPage> {
               'The provided password is too weak.',
               style: TextStyle(color: Colors.white),
             ),
-            backgroundColor: Color.fromRGBO(255, 63, 23, 1),
+            backgroundColor: Color(0xFF00BFA5),
             duration: Duration(seconds: 2),
           ),
         );
@@ -195,7 +195,7 @@ class _SignUpPageState extends State<SignUpPage> {
               'An account already exists for that email.',
               style: TextStyle(color: Colors.white),
             ),
-            backgroundColor: Color.fromRGBO(255, 63, 23, 1),
+            backgroundColor: Color(0xFF00BFA5),
             duration: Duration(seconds: 2),
           ),
         );
@@ -206,7 +206,7 @@ class _SignUpPageState extends State<SignUpPage> {
               'An error ocurred. Please try again later.',
               style: TextStyle(color: Colors.white),
             ),
-            backgroundColor: Color.fromRGBO(255, 63, 23, 1),
+            backgroundColor: Color(0xFF00BFA5),
             duration: Duration(seconds: 2),
           ),
         );

@@ -81,7 +81,7 @@ class _CustomCalendarState extends State<CustomCalendar> {
               ),
               todayDecoration: BoxDecoration(
                 shape: BoxShape.circle, // Rounded rectangle
-                color: Color.fromRGBO(255, 63, 23, 1), // White background color
+                color: Color(0xFF00BFA5), // White background color
               ),
               todayTextStyle: TextStyle(
                 color: Colors.white, // Text color for today's date

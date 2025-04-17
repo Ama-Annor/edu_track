@@ -41,7 +41,7 @@ class _EmailVerificationPageState extends State<EmailVerificationPage> {
                 mainAxisAlignment: MainAxisAlignment.start,
                 children: [
                   Icon(Icons.check_circle,
-                      color: Color.fromRGBO(255, 63, 23, 1), size: 50),
+                      color: Color(0xFF00BFA5), size: 50),
                   SizedBox(height: 15),
                   Text(
                     'Success',
@@ -165,7 +165,7 @@ class _EmailVerificationPageState extends State<EmailVerificationPage> {
                   child: const Text(
                     'Resend email',
                     style: TextStyle(
-                      color: Color.fromRGBO(255, 63, 23, 1),
+                      color: Color(0xFF00BFA5),
                       fontSize: 16,
                       fontWeight: FontWeight.bold,
                     ),

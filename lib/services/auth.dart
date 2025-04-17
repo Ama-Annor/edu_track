@@ -73,7 +73,7 @@ class AuthService {
         'An Error occurred',
         snackPosition: SnackPosition.TOP,
         duration: const Duration(seconds: 30),
-        backgroundColor: const Color.fromRGBO(255, 63, 23, 1),
+        backgroundColor: const Color(0xFF00BFA5),
         colorText: Colors.white,
       );
     }

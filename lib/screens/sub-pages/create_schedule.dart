@@ -86,7 +86,7 @@ class _CreateScheduleState extends State<CreateSchedule> {
         const SnackBar(
           content: Text('Schedule created successfully',
               style: TextStyle(color: Colors.white)),
-          backgroundColor: Color.fromRGBO(255, 63, 23, 1),
+          backgroundColor: Color(0xFF00BFA5),
           behavior: SnackBarBehavior.floating,
           margin: EdgeInsets.only(top: 10.0, left: 10.0, right: 10.0),
         ),
@@ -97,7 +97,7 @@ class _CreateScheduleState extends State<CreateSchedule> {
         const SnackBar(
           content: Text('Failed to create schedule',
               style: TextStyle(color: Colors.white)),
-          backgroundColor: Color.fromRGBO(255, 63, 23, 1),
+          backgroundColor: Color(0xFF00BFA5),
           behavior: SnackBarBehavior.floating,
           margin: EdgeInsets.only(top: 10.0, left: 10.0, right: 10.0),
         ),
@@ -160,7 +160,7 @@ void _showError(String message) {
         title: const Text(
             'Create Schedule',
             style: TextStyle(
-                color: Color.fromRGBO(255, 63, 23, 1),
+                color: Color(0xFF00BFA5),
                 fontSize: 24,
                 fontWeight: FontWeight.bold),
           ),

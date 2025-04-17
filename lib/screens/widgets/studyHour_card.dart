@@ -51,7 +51,7 @@ class StudyHourCard extends StatelessWidget {
                 const SizedBox(height: 5,),
             Text(formattedDate,
                 style: const TextStyle(
-                    fontSize: 14, color: Color.fromRGBO(255, 63, 23, 1)))
+                    fontSize: 14, color: Color(0xFF00BFA5)))
           ],
         ),
         trailing: SizedBox(

@@ -78,7 +78,7 @@ class _EditNoteState extends State<EditNote> {
     ScaffoldMessenger.of(context).showSnackBar(
       SnackBar(
         content: Text('PDF saved to ${file.path}'),
-        backgroundColor: const Color.fromRGBO(255, 63, 23, 1),
+        backgroundColor: const Color(0xFF00BFA5),
         behavior: SnackBarBehavior.floating,
       ),
     );
@@ -173,7 +173,7 @@ class _EditNoteState extends State<EditNote> {
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(15),
                   ),
-                  backgroundColor: const Color.fromRGBO(255, 63, 23, 1),
+                  backgroundColor: const Color(0xFF00BFA5),
                 ),
                 child: const Text('Edit Note', style: TextStyle(color: Colors.white)),
               ),

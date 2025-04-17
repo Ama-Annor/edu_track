@@ -63,7 +63,7 @@ class _EditProfileState extends State<EditProfile> {
           const SnackBar(
               content: Text('Profile updated successfully',
                   style: TextStyle(color: Colors.white)),
-              backgroundColor: Color.fromRGBO(255, 63, 23, 1)),
+              backgroundColor: Color(0xFF00BFA5)),
         );
         Navigator.pop(context);
       } else {
@@ -71,7 +71,7 @@ class _EditProfileState extends State<EditProfile> {
           const SnackBar(
               content: Text('Failed to update profile',
                   style: TextStyle(color: Colors.white)),
-              backgroundColor: Color.fromRGBO(255, 63, 23, 1)),
+              backgroundColor: Color(0xFF00BFA5)),
         );
       }
     } catch (e) {

@@ -89,7 +89,7 @@ class _EnableNotificationsState extends State<EnableNotifications> {
               color: Color.fromARGB(255, 89, 88, 88),
             ),
             SwitchListTile(
-              activeColor: const Color.fromRGBO(255, 63, 23, 1),
+              activeColor: const Color(0xFF00BFA5),
               title: const Text('Receive notifications for motivational quote', style: TextStyle(color: Colors.white)),
               value: _motivationalQuote,
               onChanged: (bool value) {
@@ -104,7 +104,7 @@ class _EnableNotificationsState extends State<EnableNotifications> {
               color: Color.fromARGB(255, 89, 88, 88),
             ),
             SwitchListTile(
-              activeColor: const Color.fromRGBO(255, 63, 23, 1),
+              activeColor: const Color(0xFF00BFA5),
               title: const Text('Receive notifications for study tips', style: TextStyle(color: Colors.white)),
               value: _studyTips,
               onChanged: (bool value) {

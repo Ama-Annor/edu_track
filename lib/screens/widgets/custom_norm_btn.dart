@@ -11,7 +11,7 @@ class CustomNormButton extends StatelessWidget {
     required this.text,
     required this.onPressed,
     this.textColor = Colors.white,
-    this.buttonColor = const Color.fromRGBO(255, 63, 23, 1),});
+    this.buttonColor = const Color(0xFF00BFA5),});
 
   @override
   Widget build(BuildContext context) {

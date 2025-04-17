@@ -96,7 +96,7 @@ class NotesCard extends StatelessWidget {
                               : 'Failed to edit schedule',
                           style: const TextStyle(color: Colors.white),
                         ),
-                        backgroundColor: const Color.fromRGBO(255, 63, 23, 1),
+                        backgroundColor: const Color(0xFF00BFA5),
                         behavior: SnackBarBehavior.floating,
                         margin: const EdgeInsets.only(
                             top: 10.0, left: 10.0, right: 10.0),

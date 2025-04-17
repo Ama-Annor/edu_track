@@ -233,8 +233,8 @@ class _DashboardPageState extends State<DashboardPage> {
             bottom: const TabBar(
                 tabAlignment: TabAlignment.fill,
                 dividerColor: Color.fromRGBO(29, 29, 29, 1),
-                labelColor: Color.fromRGBO(255, 63, 23, 1),
-                indicatorColor: Color.fromRGBO(255, 63, 23, 1),
+                labelColor: Color(0xFF00BFA5),
+                indicatorColor: Color(0xFF00BFA5),
                 indicatorSize: TabBarIndicatorSize.label,
                 indicatorWeight: 1.0,
                 labelStyle: TextStyle(

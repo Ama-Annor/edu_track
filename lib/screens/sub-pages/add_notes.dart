@@ -128,7 +128,7 @@ class _NewNotePageState extends State<NewNotePage> {
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(15),
                   ),
-                  backgroundColor: const Color.fromRGBO(255, 63, 23, 1),
+                  backgroundColor: const Color(0xFF00BFA5),
                 ),
                 child: const Text('Add Image', style: TextStyle(color: Colors.white)),
               ),
@@ -138,7 +138,7 @@ class _NewNotePageState extends State<NewNotePage> {
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(15),
                   ),
-                  backgroundColor: const Color.fromRGBO(255, 63, 23, 1),
+                  backgroundColor: const Color(0xFF00BFA5),
                 ),
                 child: const Text('Save Note', style: TextStyle(color: Colors.white)),
               ),

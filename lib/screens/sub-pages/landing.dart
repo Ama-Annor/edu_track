@@ -28,7 +28,7 @@ class LandingPage extends StatelessWidget {
             const SizedBox(height: 30),
             CustomNormButton(
               text: 'Sign Up',
-              textColor: const Color.fromRGBO(255, 63, 23, 1),
+              textColor: const Color(0xFF00BFA5),
               buttonColor: Colors.white,
               onPressed: () {
                 Navigator.push(context, MaterialPageRoute(builder: (context) => const SignUpPage()));
